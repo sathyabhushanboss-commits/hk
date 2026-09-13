@@ -7,7 +7,7 @@ import MobileConversionBar from "@/components/MobileConversionBar";
 import PopupLeadForm from "@/components/PopupLeadForm";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hktoursandtravels.example.com"),
+  metadataBase: new URL("https://hktoursandtravels.in"),
   title: {
     default: "H K Tours and Travels | Premium Group Travel, Bengaluru",
     template: "%s | H K Tours and Travels",

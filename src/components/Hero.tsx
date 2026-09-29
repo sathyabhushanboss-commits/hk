@@ -41,7 +41,14 @@ export default function Hero() {
     >
       {/* Background */}
       <motion.div
-        style={{ y: bgY, scale: bgScale }}
+        style={
+          prefersReducedMotion
+            ? undefined
+            : {
+                y: bgY,
+                scale: bgScale,
+              }
+        }
         className="absolute inset-0"
       >
         <motion.div
@@ -141,10 +148,14 @@ export default function Hero() {
 
       {/* Hero Content */}
       <motion.div
-        style={{
-          y: contentY,
-          opacity: contentOpacity,
-        }}
+        style={
+          prefersReducedMotion
+            ? undefined
+            : {
+                y: contentY,
+                opacity: contentOpacity,
+              }
+        }
         className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-16 pt-40 sm:pb-24 lg:px-10"
       >
         <motion.p
@@ -225,7 +236,6 @@ export default function Hero() {
           }}
           className="mt-6 flex gap-5 text-xs text-cream/70"
         >
-          {/* Phone */}
           <a
             href={`tel:${business.phoneDial}`}
             className="flex items-center gap-1.5 hover:text-gold"
@@ -234,7 +244,6 @@ export default function Hero() {
             Call Now
           </a>
 
-          {/* WhatsApp */}
           <a
             href={buildWhatsAppUrl(whatsappMessages.general)}
             target="_blank"

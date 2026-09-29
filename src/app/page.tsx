@@ -6,8 +6,7 @@ import FleetPreview from "@/components/FleetPreview";
 import DestinationStory from "@/components/DestinationStory";
 import DestinationCards from "@/components/DestinationCards";
 import WhyHK from "@/components/WhyHK";
-import SegmentSections from "@/components/SegmentSections";
-import { ReviewsSection, InstagramSection, FinalCTA } from "@/components/ReviewsInstaCTA";
+import { FinalCTA } from "@/components/ReviewsInstaCTA";
 
 export default function HomePage() {
   return (
@@ -20,9 +19,6 @@ export default function HomePage() {
       <DestinationStory />
       <DestinationCards />
       <WhyHK />
-      <SegmentSections />
-      <ReviewsSection />
-      <InstagramSection />
       <FinalCTA />
     </>
   );

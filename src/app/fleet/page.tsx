@@ -134,8 +134,8 @@ const fleet = [
   },
 
   {
-    name: "Azad 2",
-    slug: "azad-2",
+    name: "Azad ",
+    slug: "azad",
     category: "Bus",
     tagline: "Comfortable and dependable group travel",
     idealFor: "Tours, events, family trips & group transportation",
